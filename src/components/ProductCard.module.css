@@ -1,0 +1,13 @@
+/* src/components/ProductCard.module.css */
+.card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    height: 100%; /* Make cards in a row equal height if using Grid */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pushes button to bottom if content varies */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--mantine-shadow-lg);
+}
